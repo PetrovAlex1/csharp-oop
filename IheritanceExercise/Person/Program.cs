@@ -6,7 +6,11 @@ namespace Person
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			var name = Console.ReadLine();
+			var age = int.Parse(Console.ReadLine());
+
+			var child = new Child(name, age);
+			Console.WriteLine(child);
 		}
 	}
 }
