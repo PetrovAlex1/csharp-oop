@@ -6,7 +6,12 @@ namespace StudentSystem
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			StudentSystem studentSystem = new StudentSystem();
+
+			while (true)
+			{
+				studentSystem.ParseCommand();
+			}
 		}
 	}
 }
